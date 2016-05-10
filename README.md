@@ -5,11 +5,11 @@
 - [pgmodeler(v0.8.2-beta1) source code](https://github.com/pgmodeler/pgmodeler/archive/v0.8.2-beta1.zip)
 
 ## Setup Step
- 1. Setup All Pre-Require
+ * Setup All Pre-Require
 
- 2. Add path Environments --> [old path];C:\PostgreSQL\9.5\bin;C:\Qt\Qt5.5\5.5.1\mingw49_32\bin;
+ * Add path Environments --> [old path];C:\PostgreSQL\9.5\bin;C:\Qt\Qt5.5\5.5.1\mingw49_32\bin;
 
- 3. in file (pgmodeler.pri) change path of PGSQL_LIB, PGSQL_INC, XML_INC, XML_LIB
+ * in file (pgmodeler.pri) change path of PGSQL_LIB, PGSQL_INC, XML_INC, XML_LIB
 ```shell
     windows {
       !defined(PGSQL_LIB, var): PGSQL_LIB = C:/PostgreSQL/9.5/lib/libpq.dll
@@ -20,10 +20,10 @@
     }
 ```
 
- 4. Extract pgmodeler(v0.8.2-beta1) source code --> and rename to **pgmodeler**
+ * Extract pgmodeler(v0.8.2-beta1) source code --> and rename to **pgmodeler**
 
- 5. Open bash cmd to pgmodeler root path and run
+ * Open bash cmd to pgmodeler root path and run
 ```shell
 pgmodeler $ ./windeploy.sh
 ```
- 6. Install File Save to ./dist/
+ * Install File Save to ./dist/
